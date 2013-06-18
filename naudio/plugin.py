@@ -4,9 +4,10 @@ import subprocess
 from nose.plugins import Plugin
 
 
-default_busy = os.path.expanduser("~/.local/the-price-is-right-busy.ogg")
-default_success = os.path.expanduser("~/.local/the-price-is-right-success.ogg")
-default_failure = os.path.expanduser("~/.local/the-price-is-right-failure.ogg")
+assets = "/".join([os.path.dirname(__file__), "assets"])
+default_busy = "/".join([assets, "the-price-is-right-busy.ogg"])
+default_success = "/".join([assets, "the-price-is-right-success.ogg"])
+default_failure = "/".join([assets, "the-price-is-right-failure.ogg"])
 
 
 def play(filename):
