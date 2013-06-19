@@ -13,7 +13,7 @@ default_failure = "/".join([assets, "the-price-is-right-failure.ogg"])
 def play(filename):
     if not os.path.exists(filename):
         return
-    cmd = "mplayer " + filename
+    cmd = "ogg123 " + filename
     process = subprocess.Popen(
         [cmd],
         stdout=subprocess.PIPE,
