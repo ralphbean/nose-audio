@@ -1,1 +1,1 @@
-from plugin import NoseAudioPlugin
+from .plugin import NoseAudioPlugin

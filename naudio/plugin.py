@@ -13,7 +13,7 @@ default_failure = "/".join([assets, "the-price-is-right-failure.ogg"])
 def play(filename):
     if not os.path.exists(filename):
         return
-    cmd = "mplayer " + filename
+    cmd = "ogg123 " + filename
     process = subprocess.Popen(
         [cmd],
         stdout=subprocess.PIPE,
@@ -59,12 +59,12 @@ class NoseAudioPlugin(Plugin):
 
     def finalize(self, result):
         if not (result.errors or result.failures):
-            print "-" * 70
-            print "Success!"
+            print("-" * 70)
+            print("Success!")
             outro = play(self.options.audio_success)
         else:
-            print "-" * 70
-            print "Uh-oh..."
+            print("-" * 70)
+            print("Uh-oh...")
             outro = play(self.options.audio_failure)
 
         if self.busy_process:
