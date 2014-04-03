@@ -59,12 +59,12 @@ class NoseAudioPlugin(Plugin):
 
     def finalize(self, result):
         if not (result.errors or result.failures):
-            print "-" * 70
-            print "Success!"
+            print("-" * 70)
+            print("Success!")
             outro = play(self.options.audio_success)
         else:
-            print "-" * 70
-            print "Uh-oh..."
+            print("-" * 70)
+            print("Uh-oh...")
             outro = play(self.options.audio_failure)
 
         if self.busy_process:
