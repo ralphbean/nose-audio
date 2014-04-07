@@ -28,6 +28,9 @@ setup(
     url='http://github.com/ralphbean/nose-audio/',
     license='LGPLv2+',
     classifiers=[
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 3",
+        "Topic :: Software Development :: Testing",
     ],
     install_requires=requires,
     packages=[
