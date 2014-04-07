@@ -20,7 +20,7 @@ requires = [
 
 setup(
     name='nose-audio',
-    version='0.2',
+    version='0.3',
     description="Add audio to your test suite",
     long_description=long_description,
     author='Ralph Bean',
@@ -28,6 +28,9 @@ setup(
     url='http://github.com/ralphbean/nose-audio/',
     license='LGPLv2+',
     classifiers=[
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 3",
+        "Topic :: Software Development :: Testing",
     ],
     install_requires=requires,
     packages=[

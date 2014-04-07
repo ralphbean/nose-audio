@@ -24,27 +24,24 @@ def play(filename):
 
 
 class NoseAudioPlugin(Plugin):
-    enalbed = True
+    """ Play audio files during test execution for fun and profit. """
+    enabled = True
     name = 'naudio'
 
     def options(self, parser, env=os.environ):
         super(NoseAudioPlugin, self).options(parser, env=env)
-        parser.add_option('', '--no-audio',
-                          help='turn off musical tests',
-                          dest='silence',
-                          action='store_true')
-        parser.add_option('', '--audio-busy',
-                          help='path to busy audio file',
-                          default=default_busy,
-                          dest='audio_busy')
-        parser.add_option('', '--audio-success',
-                          help='path to success audio file',
-                          default=default_success,
-                          dest='audio_success')
-        parser.add_option('', '--audio-failure',
-                          help='path to failure audio file',
-                          default=default_failure,
-                          dest='audio_failure')
+        parser.add_option(
+            '--no-audio', dest='silence', action='store_true',
+            help='Turn off musical tests; disable the plugin.')
+        parser.add_option(
+            '--audio-busy', default=default_busy, dest='audio_busy',
+            help='The path to an audio file to play while tests are running.')
+        parser.add_option(
+            '--audio-success', default=default_success, dest='audio_success',
+            help='The path to an audio file to play when tests succeed.')
+        parser.add_option(
+            '--audio-failure', default=default_failure, dest='audio_failure',
+            help='Ruh-roh.  Path to an audio file to play when tests fail.')
 
     def configure(self, options, conf):
         super(NoseAudioPlugin, self).configure(options, conf)
