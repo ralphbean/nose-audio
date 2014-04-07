@@ -24,7 +24,7 @@ def play(filename):
 
 
 class NoseAudioPlugin(Plugin):
-    enalbed = True
+    enabled = True
     name = 'naudio'
 
     def options(self, parser, env=os.environ):
