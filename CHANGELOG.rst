@@ -1,6 +1,15 @@
 Changelog
 =========
 
+0.3
+---
+
+- What? `bd43a5c85 <https://github.com/ralphbean/nose-audio/commit/bd43a5c85f0f6b237b7ccd9d7501fd52c8a0eaba>`_
+- Internally document the options. `7022a9b3a <https://github.com/ralphbean/nose-audio/commit/7022a9b3ada923188229170eb21928422445353b>`_
+- document options. `1a93cfc29 <https://github.com/ralphbean/nose-audio/commit/1a93cfc29c566d4b338b4627b4aef55d4bbc4705>`_
+- Merge branch 'feature/document' into develop `5d78cea37 <https://github.com/ralphbean/nose-audio/commit/5d78cea370d4c0b81864c24bb9659536c24118d5>`_
+- Trove classifiers. `b9e2d427e <https://github.com/ralphbean/nose-audio/commit/b9e2d427e7c89529d0cb73143404e204e43ad6e4>`_
+
 0.2
 ---
 
