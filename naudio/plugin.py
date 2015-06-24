@@ -10,10 +10,10 @@ default_success = "/".join([assets, "the-price-is-right-success.ogg"])
 default_failure = "/".join([assets, "the-price-is-right-failure.ogg"])
 
 
-def play(filename):
+def play(filename, repeat=False):
     if not os.path.exists(filename):
         return
-    cmd = "ogg123 " + filename
+    cmd = "ogg123" + (" -r " if repeat else " ") + filename
     process = subprocess.Popen(
         [cmd],
         stdout=subprocess.PIPE,
@@ -50,7 +50,7 @@ class NoseAudioPlugin(Plugin):
 
     def begin(self):
         if self.enabled:
-            self.busy_process = play(self.options.audio_busy)
+            self.busy_process = play(self.options.audio_busy, repeat=True)
         else:
             self.busy_process = None
 
