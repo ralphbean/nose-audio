@@ -20,7 +20,7 @@ requires = [
 
 setup(
     name='nose-audio',
-    version='0.3',
+    version='0.4',
     description="Add audio to your test suite",
     long_description=long_description,
     author='Ralph Bean',

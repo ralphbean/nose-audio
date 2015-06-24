@@ -1,6 +1,13 @@
 Changelog
 =========
 
+0.4
+---
+
+- Repeat audio_busy as long as necessary `b2bd91676 <https://github.com/ralphbean/nose-audio/commit/b2bd916761d70139f2b67e5f9fbdd00113316aef>`_
+- Merge pull request #5 from moschlar/patch-1 `3afe38bca <https://github.com/ralphbean/nose-audio/commit/3afe38bca779e3d70faf4896243bc4fb6c6b973f>`_
+- 0.4 `700f31190 <https://github.com/ralphbean/nose-audio/commit/700f31190c17c3760db250373d47d1842dd5d3a3>`_
+
 0.3
 ---
 
